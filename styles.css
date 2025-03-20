@@ -127,18 +127,22 @@ header h1 {
 /* Цвета для заголовков */
 .backlog span {
     background-color: #bcbcbc;
+    color: #424242;
 }
 
 .in-progress span {
     background-color: #9ec9e7;
+    color: #0468cb;
 }
 
 .done span {
     background-color: #a9f4c8;
+    color: #237419;
 }
 
 .trash span {
     background-color: #eeaaa2;
+    color: #9a2b1f;
 }
 
 .grid-container span {
