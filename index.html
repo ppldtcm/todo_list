@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания по JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Список задач
+        </h1>
+    </header>
+
+    <form class="new-task_form">
+        <h2>Новая задача</h2>
+        <div class="input-group">
+            <input type="text" name="Название задачи..." placeholder="Название задачи...">
+            <input type="button" value="+ Добавить">
+        </div>
+    </form>
+
+    <section class="grid-container">
+        <div class="backlog">
+            <span>Бэклог</span>
+            <ul class="list-container">
+                <li class="list_item">Выучить джс</li>
+                <li class="list_item">Выучить реакт</li>
+                <li class="list_item">Сделать домашку</li>
+            </ul>
+        </div>
+
+        <div class="in-progress">
+            <span>В процессе</span>
+            <ul class="list-container">
+                <li class="list_item">Выпить смузи джс</li>
+                <li class="list_item">Попить воды реакт</li>
+            </ul>
+        </div>
+
+        <div class="done">
+            <span>Готово</span>
+            <ul class="list-container">
+                <li class="list_item">Позвонить маме</li>
+                <li class="list_item">Погладить кота</li>
+            </ul>
+        </div>
+
+        <div class="trash">
+            <span>Корзина</span>
+            <ul class="list-container">
+                <li class="list_item">Сходить погулять</li>
+                <li class="list_item">Прочитать Войну и мир</li>
+            </ul>
+            <input type="button" value="Очистить">
+        </div>
+    </section>
+</body>
+
+</html>

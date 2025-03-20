@@ -1,0 +1,163 @@
+body {
+    background-color: #e1f0ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0468cb;
+    padding: 5px;
+    color: white;
+}
+
+header h1 {
+    margin-left: 40px;
+}
+
+.new-task_form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.new-task_form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group input[type="button"] {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 40px); 
+    margin: 0 auto;
+}
+
+.grid-container div {
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+
+.list-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-container li {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Цвета для полосок */
+.backlog .list-container li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #bcbcbc;
+    border-radius: 3px 0 0 3px;
+}
+
+.in-progress .list-container li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #9ec9e7;
+    border-radius: 3px 0 0 3px;
+}
+
+.done .list-container li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #a9f4c8;
+    border-radius: 3px 0 0 3px;
+}
+
+.trash .list-container li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #eeaaa2;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Цвета для заголовков */
+.backlog span {
+    background-color: #bcbcbc;
+}
+
+.in-progress span {
+    background-color: #9ec9e7;
+}
+
+.done span {
+    background-color: #a9f4c8;
+}
+
+.trash span {
+    background-color: #eeaaa2;
+}
+
+.grid-container span {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trash input[type="button"] {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
